@@ -63,7 +63,8 @@
                     Problems
                     a) allowed extension (.png) not displayed in form and in link brwoser
                     b) Not possible to deactivate "Add new media asset"
-                    c) Not possible to deactivate "Additional link parameters" in "file" tab of Link Browser
+                    c) allowedOptions is not considered? (target, title, css class and additional link parameters
+                       are displayed in "File" tab, "target", "Title", "CSS-Class" fields re displayed in "External URL" tab
                      -->
                     <settings.link>
                         <TCEforms>
@@ -76,9 +77,6 @@
                                     <numIndex index="1">url</numIndex>
                                 </allowedTypes>
                                 <appearance>
-                                    <!-- is this a valid option? GUESS NOT -->
-                                    <!-- <fileByUrlAllowed>false</fileByUrlAllowed> -->
-
                                     <enableBrowser>true</enableBrowser>
                                     <browserTitle>Select file or URL</browserTitle>
 
