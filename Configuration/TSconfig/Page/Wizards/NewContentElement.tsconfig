@@ -1,0 +1,20 @@
+mod.wizards.newContentElement.wizardItems {
+   plugins {
+      elements {
+         InputLink {
+           # FontawesomeIconProvider is no longer available in TYPO3 v12, deactivate for now
+           # iconIdentifier = inputlink-plugin
+           title = inputLink example
+           description = example for testing TCA type="input", renderType="inputLink"
+           tt_content_defValues {
+               CType = list
+               # plugin signature = (lowercased extension key without _) + '_' + (lowercased plugin name)
+               list_type = sypetsexampleinputlink_inputlink
+           }
+         }
+      }
+
+      show := addToList(InputLink)
+   }
+
+}
