@@ -45,10 +45,7 @@
                                             <!-- Comma separated list of link fields that should not be displayed.
                                             Possible values are class, params, target and title.
                                             By default, all link fields are displayed.-->
-                                            <!-- see AbstractLinkHandler:
-                                            'target', 'title', 'class', 'params', 'rel'
-                                             -->
-                                            <blindLinkFields>class,params,target,title,rel</blindLinkFields>
+                                            <blindLinkFields>class,target,title,params</blindLinkFields>
                                             <!-- what link types NOT to show -->
                                             <blindLinkOptions>page,mail,telephone,folder,tx_calendarize_domain_model_event,news</blindLinkOptions>
                                             <!-- title von Button, nicht Link Browser !!! -->
