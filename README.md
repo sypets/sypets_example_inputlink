@@ -9,7 +9,7 @@ FormEngine input type="link" in v12.
 
 The goal is the following:
 
-* show allowed file extensions (.bib) in the form and link browser (as is the case in type="inline")
+* show allowed file extensions (.png) in the form and link browser (as is the case in type="inline")
 * do not show "Add new media asset" in link browser
 
 ## Supported versions
