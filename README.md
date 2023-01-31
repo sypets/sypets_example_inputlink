@@ -46,4 +46,8 @@ composer require sypets/sypets-example-inputlink:dev-main
 
 ## Reproduce
 
-To reproduce, see issue
+To reproduce, see issues
+
+1. in Backend insert a plugin using the "New Content element" wizard, in tab Plugins select "InputLink plugin"
+2. check out the fields in "plugin" tab and compare the behaviour of various types
+3. Look at flexform file
