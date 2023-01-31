@@ -3,7 +3,9 @@ Example for reproducing TYPO3 Issue:
 * https://forge.typo3.org/issues/99766
 * https://forge.typo3.org/issues/99767
 
-FormEngine input type="input", renderType="inputLink".
+FormEngine input type="input", renderType="inputLink" in v11 and v12.
+
+FormEngine input type="link" in v12.
 
 The goal is the following:
 
