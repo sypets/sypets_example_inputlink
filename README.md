@@ -1,16 +1,12 @@
-Example for reproducing TYPO3 Issue:
+Example for testing a core patch, see TYPO3 Issue:
 
-* https://forge.typo3.org/issues/99766
-* https://forge.typo3.org/issues/99767
+* https://forge.typo3.org/issues/92535
 
-FormEngine input type="input", renderType="inputLink" in v11 and v12.
+And corresponding patch:
 
-FormEngine input type="link" in v12.
+* https://review.typo3.org/c/Packages/TYPO3.CMS/+/77894
 
-The goal is the following:
-
-* show allowed file extensions (.png) in the form and link browser (as is the case in type="inline")
-* do not show "Add new media asset" in link browser
+!!! This extension will only work with the corresponding patch applied.
 
 ## Supported versions
 
@@ -22,7 +18,7 @@ The goal is the following:
 Without Composer:
 
 ```shell
-git clone https://github.com/sypets/sypets_example_inputlink.git
+git clone https://github.com/sypets/sypets_example_plugincacheexpiration.git
 ```
 
 With Composer:
@@ -31,9 +27,9 @@ Add to composer.json:
 
 ```json
 "repositories": {
-		"sypets_example_inputlink": {
+		"sypets_example_plugincacheexpiration": {
 			"type": "git",
-			"url": "https://github.com/sypets/sypets_example_inputlink.git"
+			"url": "https://github.com/sypets/sypets_example_plugincacheexpiration.git"
 		}
 },
 ```
@@ -41,13 +37,11 @@ Add to composer.json:
 Run:
 
 ```shell
-composer require sypets/sypets-example-inputlink:dev-main
+composer require sypets/sypets-example-plugincacheexpiration:dev-main
 ```
 
-## Reproduce
+## TEST
 
-To reproduce, see issues
-
-1. in Backend insert a plugin using the "New Content element" wizard, in tab Plugins select "InputLink plugin"
-2. check out the fields in "plugin" tab and compare the behaviour of various types
-3. Look at flexform file
+To test if the patch works, insert a plugin and load the FE page several times.
+After about 10 seconds the page cache should be invalidated and you should see
+a new timestamp.

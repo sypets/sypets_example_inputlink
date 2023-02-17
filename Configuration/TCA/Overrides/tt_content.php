@@ -2,23 +2,18 @@
 
 defined('TYPO3') or die();
 
-$extkey = 'sypets_example_inputlink';
+$extkey = 'sypets_example_plugincacheexpiration';
 $extensionName = \TYPO3\CMS\Core\Utility\GeneralUtility::underscoredToUpperCamelCase($extkey);
 $flexformPath = 'FILE:EXT:' . $extkey . '/Configuration/FlexForms';
 $plugins = [
     [
         // mandatory
-        'name' => 'Inputlink',
+        'name' => 'Cache',
         // mandatory
-        'label' => 'InputLink plugin',
-
-        // icon: optional
-        // todo: fall back to default icon
-        // FontawesomeIconProvider is no longer available in TYPO3 v12, deactivate for now
-        //'icon' => 'inputlink-plugin',
+        'label' => 'Page cache expiration test',
 
         // flexform: optional
-        'flexform' => $flexformPath . '/InputLink.xml',
+        'flexform' => '',
 
         // subtypes_excludelist: optional
         'exclude' => 'recursive,select_key,pages',

@@ -2,8 +2,8 @@
 
 /** @var $_EXTKEY string */
 $EM_CONF[$_EXTKEY] = [
-    'title'            => 'sypets_example_inputlink',
-    'description'      => 'TYPO3 example for reproducing a TYPO3 issue with TCA inputLink',
+    'title'            => 'sypets_example_plugincacheexpiration',
+    'description'      => 'TYPO3 example for testing a core patch to modify page cache expiration time',
     'version' => '0.0.1',
     'state'            => 'beta',
     'clearcacheonload' => 0,
@@ -11,7 +11,7 @@ $EM_CONF[$_EXTKEY] = [
     'author_email'     => 'sypets@gmx.de',
     'constraints'      => [
         'depends' => [
-            'typo3' => '11.5.1-12.9.99',
+            'typo3' => '12.3.0-12.9.99',
         ],
     ],
 ];

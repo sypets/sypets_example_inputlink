@@ -1,10 +1,10 @@
 {
-	"name": "sypets/sypets-example-inputlink",
+	"name": "sypets/sypets-example-plugincacheexpiration",
 	"type": "typo3-cms-extension",
-	"description": "TYPO3 example for reproducing a TYPO3 issue with FormEngine renderType=inputLink",
+	"description": "TYPO3 example for testing a core patch to modify page cache expiration time",
 	"autoload": {
 		"psr-4": {
-			"Sypets\\SypetsExampleInputlink\\": "Classes/"
+			"Sypets\\SypetsExamplePlugincacheexpiration\\": "Classes/"
 		}
 	},
 	"authors": [
@@ -15,7 +15,7 @@
 		}
 	],
 	"require": {
-		"typo3/cms-core": "^11.5 || 12 || dev-main"
+		"typo3/cms-core": "^12.3.0 || dev-main"
 	},
 	"license": "GPL-2.0-or-later",
 	"config": {
@@ -26,7 +26,7 @@
 		"typo3/cms": {
 			"cms-package-dir": "{$vendor-dir}/typo3/cms",
 			"web-dir": ".Build/Web",
-			"extension-key": "sypets_example_inputlink"
+			"extension-key": "sypets_example_plugincacheexpiration"
 		}
 	}
 }
